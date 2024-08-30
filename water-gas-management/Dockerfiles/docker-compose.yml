@@ -1,15 +1,13 @@
-# docker-compose.yml
-
 version: '3'
-
 services:
-  node_service:
+  app:
     build: .
     ports:
-      - "5000:5000"
-    volumes:
-      - ./uploads:/server/uploads
+      - "3000:3000"
     depends_on:
-      - ai_service
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
 
-  
