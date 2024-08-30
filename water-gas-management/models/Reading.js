@@ -1,4 +1,4 @@
-// models/Reading.js
+
 
 const mongoose = require('mongoose');
 
