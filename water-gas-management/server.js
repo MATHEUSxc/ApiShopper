@@ -21,3 +21,5 @@ app.use('/api/readings', require('./routes/readings'));
 // Inicia o servidor
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Servidor iniciado na porta ${PORT}`));
+
+

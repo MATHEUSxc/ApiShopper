@@ -1,0 +1,15 @@
+# docker-compose.yml
+
+version: '3'
+
+services:
+  node_service:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./uploads:/server/uploads
+    depends_on:
+      - ai_service
+
+  
